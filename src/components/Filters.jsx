@@ -4,10 +4,7 @@ import "./Filters.css";
 function Filters({ filters, setFilters }) {
   const [showDateFilter, setShowDateFilter] = useState(false);
 
-  useEffect(() => {
-    
-    setFilters((prev) => ({ ...prev }));
-  }, [showDateFilter]);
+
 
   return (
     <div className="filters">
