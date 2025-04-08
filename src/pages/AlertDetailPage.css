@@ -1,0 +1,22 @@
+.detail-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .alert-description {
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

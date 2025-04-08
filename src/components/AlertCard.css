@@ -1,0 +1,42 @@
+.alert-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .alert-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .alert-title-link {
+    text-decoration: none;
+    color: #000000; 
+  }
+  
+  .alert-title-link:hover {
+    text-decoration: underline;
+  }
+  
+  .alert-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  
+  .alert-sujet {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .alert-card p {
+    font-size: 0.95rem;
+    margin: 4px 0;
+    color: #333;
+  }
+  

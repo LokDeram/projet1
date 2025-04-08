@@ -1,0 +1,39 @@
+.subscribe-box {
+    background-color: #f4f5f7;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+    box-shadow: none;
+  }
+  
+  .subscribe-box h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+  }
+  
+  .subscribe-box p {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-box button {
+    background: none;
+    border: none;
+    color: #00784f;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .subscribe-box button:hover {
+    text-decoration: underline;
+  }
+  

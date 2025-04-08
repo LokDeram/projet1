@@ -1,0 +1,29 @@
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button {
+    padding: 10px;
+    border-radius: 20px;
+    font-weight:400
+    ;
+    font-size:medium;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    min-width: 150px;
+  }
+  
+  .date-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  
+  
