@@ -1,29 +1,74 @@
 .filters {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .filter-button {
-    padding: 10px;
-    border-radius: 20px;
-    font-weight:400
-    ;
-    font-size:medium;
-    border: 1px solid #ccc;
-    background-color: white;
-    cursor: pointer;
-    min-width: 150px;
-  }
-  
-  .date-inputs {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  
-  
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.date-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 10px 2rem;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.filter-box label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  z-index: 10;
+  min-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
