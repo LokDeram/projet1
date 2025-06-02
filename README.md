@@ -1,12 +1,61 @@
-# React + Vite
+#  Avis et Alertes Montréal – Application PWA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est une **application web progressive (PWA)** qui permet de consulter les **avis et alertes émis par la Ville de Montréal**. Il inclut une **interface moderne**, un **système de filtres**, le **mode hors-ligne**, et l’intégration des **notifications push** via un serveur backend Express.js.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Fonctionnalités principales
 
-## Expanding the ESLint configuration
+-  **Abonnement aux notifications push**
+-  Récupération en temps réel des avis et alertes via l'API officielle de Montréal
+-  **Filtres dynamiques** : arrondissement, sujet, date
+-  Interface **responsive** compatible mobile et desktop
+-  **Mode hors-ligne** avec Service Worker
+-  Backend Express avec base de données Firebase pour les abonnements
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Organisation du projet
+
+avis-alertes-montreal/
+├── backend/ # Serveur Express pour les notifications
+│ ├── firebase/ # Fichier firebaseConfig.js (non versionné)
+│ ├── routes/ # Routes : subscribe, unsubscribe, alerts...
+│ └── index.js # Point d'entrée du serveur
+├── public/ # Fichiers statiques (manifest.json, service-worker.js)
+├── src/ # Code source React (frontend)
+│ ├── components/ # Composants UI
+│ ├── pages/ # Pages principales
+│ ├── data/ # Fonctions API et gestion des notifications
+│ └── App.jsx # Composant racine
+├── .gitignore
+├── package.json # Dépendances du frontend
+└── README.md # Fichier actuel
+
+
+## Instructions pour installer et exécuter le code
+
+ Installer les dépendances : npm install
+
+Backend : cd backend
+npm install
+
+
+
+## Exécution locale
+
+Lancer le backend : cd backend
+node index.js
+
+
+Lancer le frontend : npm run dev
+
+
+## Remarques techniques
+Le backend utilise webpush pour envoyer des notifications.
+
+Les abonnements sont sauvegardés dans Firebase Firestore.
+
+Un fichier service-worker.js gère le cache et les notifications côté client.
+
+Le site fonctionne même hors connexion.
